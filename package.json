@@ -1,0 +1,39 @@
+{
+  "name": "e2e_sdk_automaiton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test-mainnet": "mocha --timeout 600000 --spec test/specs/mainnet/*/*.js",
+    "test-mainnet-sendtoken-arbitrum": "mocha --timeout 600000 --spec test/specs/mainnet/01_sendToken/Arbitrum.spec.js",
+    "test-mainnet-sendtoken-bsc": "mocha --timeout 600000 --spec test/specs/mainnet/01_sendToken/BSC.spec.js",
+    "test-mainnet-sendtoken-matic": "mocha --timeout 600000 --spec test/specs/mainnet/01_sendToken/Matic.spec.js",
+    "test-mainnet-sendtoken-optimism": "mocha --timeout 600000 --spec test/specs/mainnet/01_sendToken/Optimism.spec.js",
+    "test-mainnet-sendtoken-xdai": "mocha --timeout 600000 --spec test/specs/mainnet/01_sendToken/xDai.spec.js",
+    "test-mainnet-transactionhistory-arbitrum": "mocha --timeout 600000 --spec test/specs/mainnet/02_transactionHistory/Arbitrum.spec.js",
+    "test-mainnet-transactionhistory-bsc": "mocha --timeout 600000 --spec test/specs/mainnet/02_transactionHistory/BSC.spec.js",
+    "test-mainnet-transactionhistory-matic": "mocha --timeout 600000 --spec test/specs/mainnet/02_transactionHistory/Matic.spec.js",
+    "test-mainnet-transactionhistory-optimism": "mocha --timeout 600000 --spec test/specs/mainnet/02_transactionHistory/Optimism.spec.js",
+    "test-mainnet-transactionhistory-xdai": "mocha --timeout 600000 --spec test/specs/mainnet/02_transactionHistory/xDai.spec.js",
+    "test-mainnet-swap-arbitrum": "mocha --timeout 600000 --spec test/specs/mainnet/03_swap/Arbitrum.spec.js",
+    "test-mainnet-swap-bsc": "mocha --timeout 600000 --spec test/specs/mainnet/03_swap/BSC.spec.js",
+    "test-mainnet-swap-matic": "mocha --timeout 600000 --spec test/specs/mainnet/03_swap/Matic.spec.js",
+    "test-mainnet-swap-optimism": "mocha --timeout 600000 --spec test/specs/mainnet/03_swap/Optimism.spec.js",
+    "test-mainnet-swap-xdai": "mocha --timeout 600000 --spec test/specs/mainnet/03_swap/xDai.spec.js",
+    "test-mainnet-exchangerate-allnetworks": "mocha --timeout 600000 --spec test/specs/otherFeatures/exchangeRate/AllNetworks.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@etherspot/contracts": "^2.0.1",
+    "axios": "^1.4.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "erc-20-abi": "^1.0.0",
+    "ethers": "5.6",
+    "etherspot": "file:../etherspot-sdk/dist/index.js",
+    "mocha": "^10.2.0",
+    "ws": "^8.13.0"
+  }
+}
